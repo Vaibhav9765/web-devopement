@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#intro_section" class="logo_txt">VAIBHAV JADHAV</a> </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="intro_section.html">Home</a></li>
+                <li><a href="#testimonal_section">Testimonals</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#abt_section">About Us</a></li>
+                <li><a href="#contact_section">Contact Us</a></li>
+                <li onclick="displayMenu()"><i class="fa fa-2x fa-bars"></i></li>
+            </ul>
+        </div>
+    </header>
+    <section class="intro_section">
+        <div class="introduction">
+            <span class="intro_txt">
+                Hii, <br> <span id="kisan">I am a </span> 
+            </span>
+            
+        </div>
+        <div class="intro_img">
+            <img src="kisan.png" alt="" class="myphoto">
+        </div>
+    </section>
+    <section id="testimonal_section">
+        <span class="testimonal_txt">What our client says</span>
+        <div class="card">
+            <div class="cards">
+                <div class="usr_img">
+                    <img src="data:image/avif;base64,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"
+                        alt="" class="usr_photo">
+                </div>
+                <div class="speech">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum placeat quidem eligendi nemo
+                    maxime, suscipit nobis aliquam provident fugiat.
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="usr_img">
+                    <img src="data:image/avif;base64,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"
+                        alt="" class="usr_photo">
+                </div>
+                <div class="speech">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum placeat quidem eligendi nemo
+                    maxime, suscipit nobis aliquam provident fugiat.
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="usr_img">
+                    <img src="data:image/avif;base64,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"
+                        alt="" class="usr_photo">
+                </div>
+                <div class="speech">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum placeat quidem eligendi nemo
+                    maxime, suscipit nobis aliquam provident fugiat.
+
+                </div>
+            </div>
+        </div>
+</section>
+ <h1 style="text-align: center; letter-spacing: 3px;">My Skills</h1>
+<section id="skills">
+   
+    <div class="skills_info">
+        I have completed web-development course. I have good knowledege of HTML CSS JAVASCRIPT and C++. <br>Apart from this I can also communicate well and fluently.
+    </div>
+<div class="skills_bar">
+    <p>HTML</p>
+    <div class="container">
+      <div class="skills html">90%</div>
+    </div>
+    
+    <p>CSS</p>
+    <div class="container">
+      <div class="skills css">80%</div>
+    </div>
+    
+    <p>JavaScript</p>
+    <div class="container">
+      <div class="skills js">65%</div>
+    </div>
+    
+    <p>PHP</p>
+    <div class="container">
+      <div class="skills php">60%</div>
+    </div>
+</div>
+
+
+    </section>
+    <section id="abt_section">
+        <div class="abt_img"><img src="kisan.png" alt="" class="myphoto"></div>
+         <div class="abt_txt"><p>Hello Visiter, This side vaibhav jadhav here.<br> I am a professional Programmer, having skills
+            like Html,Css,JavaScript,React, Node Js and so on</p></div>
+
+    </section>
+    <section id="contact_section">
+        <div class="location">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Long_and_Loop_Street_map.svg" alt=""
+                class="map_img">
+        </div>
+        <div class="form"><span class="intro_txt">Contact Us</span>
+            <form action="" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="fname" placeholder="First Name">
+                    <input type="text" id="lname" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="mob" placeholder="mobile number">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="e-mail" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="msg" placeholder="Enter your message here">
+                </div>
+                
+
+            </form>
+            <form action="succees.html">
+               
+                <button class="button" type="submit" value="submit"
+                >SUBMIT</button>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        
+        <div class="socialmedia">
+            <a href="#" class="fa fa-linkedin" target="_blank"></a>
+            <a href="#" class="fa fa-twitter" target="_blank"></a>
+            <a href="#" class="fa fa-github" target="_blank"></a>
+        </div>
+        
+    </footer>
+</body>
+
+</html>
